@@ -197,11 +197,11 @@ body {
   transition: all 0.3s;
 }
 
-.profile__button--hover:hover {
+.projects__button--hover:hover {
   background-color: var(--red);
 }
 
-.profile__button--hover:hover span {
+.projects__button--hover:hover span {
   transform: translateX(3px);
 }
 
