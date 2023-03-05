@@ -159,7 +159,7 @@ body {
 .tile__img {
   width: 400px;
   height: 330px;
-
+  border-bottom: 3px solid var(--blue);
 }
 
 .tile__text {
