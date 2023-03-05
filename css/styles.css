@@ -77,6 +77,25 @@ body {
   height: 100vh;
 }
 
+.welcome__picture-container {
+  height: 250px;
+  width: 250px;
+  overflow: hidden;
+  background-color: #d62828;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  border: 5px solid var(--blue);
+  box-shadow: 0 0 20px 1px var(--blue);
+}
+
+.picture-container__profile-picture {
+  height: 300px;
+  width: 250px;
+}
+
 .welcome__headline {
   text-align: center;
   font-size: 4rem;
@@ -140,6 +159,7 @@ body {
 .tile__img {
   width: 400px;
   height: 330px;
+
 }
 
 .tile__text {
