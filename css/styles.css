@@ -127,8 +127,8 @@ body {
 .projects__headline {
   color: var(--cream);
   font-size: 2.5rem;
-  margin-top: 13rem;
-  margin-bottom: 6rem;
+  margin-top: 7rem;
+  margin-bottom: 5rem;
   border-bottom: 3px solid var(--cream);
   padding: 0 1rem;
 }
@@ -179,15 +179,15 @@ body {
   opacity: 1;
 }
 
-.profile__button {
+.projects__button {
   text-decoration: none;
   color: var(--blue);
   padding: 1rem 2.5rem;
   font-weight: bold;
   font-size: 1.2rem;
   border-radius: 10px;
-  margin-top: 2rem;
-  margin-bottom: 6rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
   background-color: var(--cream);
 }
 
@@ -273,6 +273,10 @@ body {
   border-top: 5px solid var(--red);
 }
 
+.footer__text {
+  margin: 0;
+}
+
 .footer__link {
   text-decoration: none;
   color: inherit;
@@ -287,6 +291,27 @@ body {
   content: '©';
 }
 
+/* Button back to top */
+
+.btn-up {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 10px;
+  color: var(--red);
+  font-weight: bold;
+  font-size: 1.2rem;
+  height: 50px;
+  width: 50px;
+  border: 3px solid var(--red);
+  border-radius: 50%;
+  background-color: var(--blue);
+  position: fixed;
+  left: 10px;
+  bottom: 20px;
+  opacity: 0.6;
+}
+
 /* Media Query width smaller than 1200px */
 
 @media screen and (max-width: 1300px) {
@@ -299,9 +324,9 @@ body {
 
 /* Ende media */
 
-/* Media Query width smaller than 950px */
+/* Media Query width smaller than 980px */
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 980px) {
   .header {
     justify-content: center;
   }
@@ -311,6 +336,8 @@ body {
   }
 
   .projects__headline {
+    margin-top: 6rem;
+    margin-bottom: 3rem;
     text-align: center;
   }
 
@@ -325,7 +352,7 @@ body {
   }
 }
 
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 980px) {
   .projects__tile--hover:hover {
     transform: scale(1.1);
   }
@@ -333,13 +360,33 @@ body {
 
 /* Ende media */
 
+/* Media Query width smaller than 600px */
+
+@media screen and (max-width: 600px) {
+  .btn-up {
+    visibility: hidden;
+  }
+}
+
 /* Media Query width smaller than 450px */
 
 @media screen and (max-width: 450px) {
 
+  .welcome {
+    margin-top: 4rem;
+  }
+
+  .projects__headline {
+    margin: 5rem 0 3rem 0;
+  }
+
   .projects__tile {
     height: 400px;
     width: 350px;
+  }
+
+  .footer__text--icon::after {
+    visibility: hidden;
   }
 }
 
